@@ -141,7 +141,7 @@ swiper-slide {
     background-color: #fb5849;
     color: #fff;
     border-radius: 50%;
-    transform: translate(-45px, -35px);
+    transform: translate(15px, -15px);
     transition: all ease-in-out 3s;
 }
 
@@ -221,6 +221,12 @@ section .menu_content .pg_bar {
     width: 300px;
     color: #343a40;
     margin-bottom: 40px;
+}
+
+.menu_list {
+    display: flex;
+    gap: 3.4rem;
+    padding-left: 2%;
 }
 
 .menu_content h2 {
@@ -683,7 +689,7 @@ form ::placeholder {
     display: flex;
     padding-left: 7%;
     padding-right: 8%;
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .first_menu {
@@ -750,20 +756,23 @@ margin-bottom: 0;
     top: -28vw;
     margin-left: 40%;
 }
-.menu_txt2 h4{
+
+.menu_txt2 h4 {
     font-size: 25px;
     font-weight: 900;
     width: 300px;
     position: relative;
     margin-bottom: 5%;
 }
-.menu_txt2 p{
+
+.menu_txt2 p {
     width: 280px;
     position: relative;
     color: #343a40;
     font-weight: 500;
 }
-.price{
+
+.price {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -776,17 +785,19 @@ margin-bottom: 0;
     border-radius: 3px;
     text-align: center;
     line-height: 70px;
-  
+
 }
+
 /*                                   */
 /*                                   */
 /*                                   */
 /*                                   */
-.media_icons{
+.media_icons {
     justify-content: space-between;
     padding: 5%;
     display: flex;
 }
+
 ul .social-icons {
     position: absolute;
     z-index: 11;
@@ -796,8 +807,9 @@ ul .social-icons {
     transition: all 5s;
     opacity: 0;
     align-items: center;
-  }
-  ul .social-icons li a {
+}
+
+ul .social-icons li a {
     width: 40px;
     height: 40px;
     background-color: #fff;
@@ -807,18 +819,21 @@ ul .social-icons {
     line-height: 40px;
     text-decoration: none;
     transition: all .5s;
-  }
+}
+
 .social-icons li:hover {
     background-color: #fb5849;
-  }
-  footer{
+}
+
+footer {
     /* top: -102px; */
     position: relative;
     background-color: #fb5849;
-  }
-  .footer_txt{
+}
+
+.footer_txt {
     color: #fff;
-  }
+}
 
 
 
@@ -833,8 +848,8 @@ ul .social-icons {
     margin: 0 auto;
     background-color: #fb5849;
     animation-name: stretch;
-    animation-duration: 0.5s; 
-    animation-timing-function: ease-in; 
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
     animation-delay: 0;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -842,22 +857,116 @@ ul .social-icons {
     animation-play-state: running;
     border-radius: 200%;
     z-index: 1000;
-  }
-  
-  @keyframes stretch {
+}
+
+@keyframes stretch {
     0% {
-      transform: scale(.3);
-      background-color: #fb5849;
-      border-radius: 100%;
+        transform: scale(.3);
+        background-color: #fb5849;
+        border-radius: 100%;
     }
+
     50% {
-      background-color: #fb5849;
+        background-color: #fb5849;
     }
+
     100% {
-      transform: scale(1.5);
-      background-color: #fb5849;
+        transform: scale(1.5);
+        background-color: #fb5849;
     }
-  }
-  
+}
 
+@media (min-width:320px) and (max-width:425px) {
+    header ul {
+        display: none;
+    }
 
+    .left-content {
+        flex-direction: column;
+    }
+
+    .left-content img {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .left-content .inner-content {
+        left: 50%;
+        /* position: a; */
+        top: 20%;
+    }
+
+    swiper-container {
+        width: 100vw;
+    }
+
+    .image_slider img {
+        height: 100vh;
+    }
+
+    section .about_content .pg_bar {
+        width: 5.3vw;
+        position: relative;
+    }
+
+    .about_content h1 {
+        width: 150px;
+        font-weight: 900;
+        line-height: 15vw;
+    }
+
+    .about_content p {
+        width: 286px;
+        line-height: 7vw;
+    }
+
+    .about_img img {
+        width: 26vw;
+    }
+
+    .right-content {
+        position: relative;
+        top: 230vw;
+        right: 125%;
+        justify-content: space-around;
+    }
+
+    .thumb img {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .right-content i {
+        z-index: 1000;
+    }
+
+    .about_content i {
+        top: 25%;
+        position: relative;
+        left: 40%;
+    }
+
+    .menu {
+        margin-top: 60ex;
+    }
+
+    .menu .menu_content .pg_bar {
+        width: 10vw;
+    }
+
+    .menu .menu_content h1 {
+        width: 250px;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 2.5ex;
+    }
+.menu_list{
+    flex-direction: column;
+}
+    .chefs {
+        display: none;
+    }
+    .reservations{
+        display: none;
+    }
+}
