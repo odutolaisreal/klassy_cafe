@@ -12,6 +12,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>klassy cafe</title>
 </head>
@@ -28,7 +29,15 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">Chefs</a></li>
-            <li><a href="#">Features</a></li>
+            <li class="submenu">
+                <a href="#">Features</a>
+                <ul class="t_ul">
+                    <li class="sum"><a href="#">Features Page 1</a></li>
+                    <li><a href="#">Features Page 2</a></li>
+                    <li><a href="#">Features Page 3</a></li>
+                    <li><a href="#">Features Page 4</a></li>
+                </ul>
+            </li>
             <li><a href="#">Contact Us</a></li>
         </ul>
     </header>
@@ -83,7 +92,7 @@
                 </div>
             </div>
             <div class="right-content" data-aos="zoom-in-right" data-aos-duration="3000">
-            <i class="fa fa-play" aria-hidden="true"></i>
+                <i class="fa fa-play" aria-hidden="true"></i>
                 <div class="thumb">
                     <img src="assets/images/about-video-bg.jpg" alt="">
                 </div>
@@ -97,12 +106,13 @@
                 <h2>OUR MENU</h2>
                 <h1>our selection of cakes with quality taste</h1>
             </div>
-            <div style="" data-aos="zoom-in-up" data-aos-duration="3000" class="menu_list">
+            <div data-aos="zoom-in-up" data-aos-duration="3000" class="menu_list">
                 <div class="card" data-aos="zoom-in-left" data-aos-duration="3000">
                     <div class="card_price">$10</div>
                     <div class='info'>
                         <h1 class='title'>Chocolate Cake</h1>
-                        <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod
+                        <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do
+                            eiusmod
                             teme.
                         </p>
                     </div>
@@ -113,7 +123,8 @@
                     <div class="card_price">$10</div>
                     <div class='info'>
                         <h1 class='title'>Chocolate Cake</h1>
-                        <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod
+                        <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do
+                            eiusmod
                             teme.
                         </p>
                     </div>
@@ -124,7 +135,8 @@
                     <div class="card_price">$10</div>
                     <div class='info'>
                         <h1 class='title'>Chocolate Cake</h1>
-                        <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod
+                        <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do
+                            eiusmod
                             teme.
                         </p>
                     </div>
@@ -135,12 +147,26 @@
                     <div class="card_price">$10</div>
                     <div class='info'>
                         <h1 class='title'>Chocolate Cake</h1>
-                        <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod
+                        <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do
+                            eiusmod
                             teme.
                         </p>
                     </div>
                     <div id="showup"></div>
                 </div>
+                <div class="card" data-aos="zoom-in-left" data-aos-duration="3000"
+                    style="background-image: url(./assets/images/menu-item-05.jpg);">
+                    <div class="card_price">$10</div>
+                    <div class='info'>
+                        <h1 class='title'>Chocolate Cake</h1>
+                        <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do
+                            eiusmod
+                            teme.
+                        </p>
+                    </div>
+                    <div id="showup"></div>
+                </div>
+                </figure>
             </div>
         </div>
     </section>
@@ -152,9 +178,9 @@
             </div>
             <div class="overlay">
                 <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"> <i class="fa fa-instagram"></i></a></li>
 
                 </ul>
             </div>
@@ -165,36 +191,47 @@
                     </div>
                     <h2>Randy Walker</h2>
                     <h5>pastry chef</h5>
-                </div>
-                <div class="overlay2">
-                    <ul class="social-icons2">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <div class="overlay">
+                        <ul class="social-icons">
+                            <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"> <i class="fa fa-instagram"></i></a></li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
+
+
                 <div class="chef_details" data-aos="zoom-in" data-aos-duration="3000">
                     <div class="chef_details1">
                         <img src="./assets/images/chefs-02.jpg" alt="">
                     </div>
                     <h2>David Martin</h2>
                     <h5>cookie chef</h5>
-                </div>
-                <div class="overlay3">
-                    <ul class="social-icons3">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <div class="overlay2">
+                        <ul class="social-icons2">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="chef_details" data-aos="zoom-in-left" data-aos-duration="3000">
                     <div class="chef_details1">
                         <img src="./assets/images/chefs-03.jpg" alt="">
                     </div>
                     <h2>Peter Perkson</h2>
                     <h5>pancake chef</h5>
+                    <div class="overlay3">
+                        <ul class="social-icons3">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

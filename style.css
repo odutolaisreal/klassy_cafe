@@ -100,9 +100,9 @@ header ul li a:hover {
 }
 
 swiper-container {
-    width: 64vw;
+    width: 100vw;
     height: 100%;
-    --swiper-pagination-display: none;
+    --swiper-pagination-display: block;
 }
 
 swiper-slide {
@@ -129,8 +129,8 @@ swiper-slide {
 
 .about_content i {
     position: absolute;
-    left: 75%;
-    top: 190%;
+    left: 40%;
+    top: 40%;
     width: 70px;
     z-index: 1000;
     height: 70px;
@@ -225,8 +225,9 @@ section .menu_content .pg_bar {
 
 .menu_list {
     display: flex;
-    gap: 3.4rem;
-    padding-left: 2%;
+    gap: 1.4rem;
+    padding-left: 2.5%;
+    margin-top: 7%;
 }
 
 .menu_content h2 {
@@ -242,14 +243,16 @@ section .menu_content .pg_bar {
     height: 70vh;
     background-repeat: no-repeat;
     /* border-radius: 30px; */
+    background-size: 95% 90%;
+    width: 100%;
 }
 
 .card_price {
     background-color: #fb5849;
-    width: 5rem;
-    padding: 18%;
-    height: 1rem;
-    border-radius: 5px;
+    width: 4.5rem;
+    height: 4rem;
+    padding: 9%;
+    border-radius: 3px;
     color: #fff;
     font-weight: 900;
     font-size: 22px;
@@ -274,10 +277,18 @@ section .menu_content .pg_bar {
     height: 6vh;
     position: relative;
     background-color: #fb5849;
-    width: 20.8vw;
+    width: 17vw;
+    text-align: center;
     top: 280px;
-    border-radius: 5px;
-    display: block;
+    /* border-radius: 5px; */
+    display: inline-block;
+}
+
+.card #showup::before {
+    content: "chocolate cake";
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .card:hover {
@@ -289,9 +300,10 @@ section .menu_content .pg_bar {
     .info {
         position: relative;
         display: block;
-        width: 20.8vw;
+        width: 17.1vw;
         height: fit-content;
-        top: -25px;
+        top: -26px;
+        transition: all .3s;
         transform: translateY(200px) translateZ(100px);
     }
 }
@@ -305,11 +317,6 @@ section .menu_content .pg_bar {
     border: 1px solid #fb5849;
     transform: translateY(100%) translateY(120px) translateZ(0);
     transition: transform 0.5s ease-out;
-}
-
-.card:hover .info,
-.card:hover .info:before {
-    transform: translateY(200px) translateZ(100px);
 }
 
 .title {
@@ -361,6 +368,7 @@ section .menu_content .pg_bar {
 .chef_details {
     border: 1px solid #8b9197;
     width: fit-content;
+    z-index: 1000;
     padding: 7px;
     text-align: center;
 }
@@ -373,12 +381,15 @@ section .menu_content .pg_bar {
 }
 
 .chef_details:hover {
-    color: #fb5849;
     border: 1px solid #fb5849;
 }
 
-.chef_details:hover .overlay {
-    visibility: visible;
+.chef_details:hover h2 {
+    color: #fb5849;
+}
+
+.chef_details:hover h5 {
+    color: #fb5849;
 }
 
 .chef_details h5 {
@@ -398,39 +409,39 @@ section .menu_content .pg_bar {
     position: absolute;
     height: 58vh;
     background-color: #000;
-    width: 26.4vw;
-    left: 6.66%;
+    width: fit-content;
+    left: 30.56%;
     opacity: 0.8;
     filter: invert(3%);
-    /* display: none; */
+    display: none;
     z-index: 1000;
-    top: 438%;
+    top: 5%;
 }
 
-.overlay2 {
+.chef_details .overlay2 {
     position: absolute;
     height: 58vh;
     background-color: #000;
     width: 26.4vw;
-    left: 36.76%;
+    left: 37%;
     opacity: 0.8;
     filter: invert(3%);
-    /* display: none; */
+    display: none;
     z-index: 1000;
-    top: 438%;
+    top: 451%;
 }
 
-.overlay3 {
+.chef_details .overlay3 {
     position: absolute;
     height: 58vh;
     background-color: #000;
     width: 26.4vw;
-    left: 66.96%;
+    left: 67%;
     opacity: 0.8;
     filter: invert(3%);
-    /* display: none; */
+    display: none;
     z-index: 1000;
-    top: 438%;
+    top: 451%;
 }
 
 ul {
@@ -881,6 +892,11 @@ footer {
         display: none;
     }
 
+    .chef_txt {
+        left: -40%;
+        position: relative;
+    }
+
     .left-content {
         flex-direction: column;
     }
@@ -960,13 +976,94 @@ footer {
         font-size: 35px;
         line-height: 2.5ex;
     }
-.menu_list{
-    flex-direction: column;
-}
+
+    .menu_list {
+        flex-direction: row;
+    }
+
+    .cheff {
+        flex-direction: column;
+    }
+
     .chefs {
+        margin-top: 500%;
+    }
+
+    .menu #showup {
+        width: 100%;
+    }
+
+    .menu .card .info {
+        width: 100%;
+    }
+
+    .chef_details {
+        width: 95%;
+    }
+
+    .menu_list {
+        flex-direction: column;
+    }
+
+    .chef_details img {
+        width: 95%;
+    }
+
+    .reservations {
         display: none;
     }
-    .reservations{
+
+    .overlay {
         display: none;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    .overlay2 {
+        display: none;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    .overlay3 {
+        display: none;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    .card {
+        background-size: cover;
+    }
+
+    .card_price {
+        padding: 4%;
+        width: 4rem;
+        height: 13vh;
+        text-align: center;
+        padding-top: 22px;
+    }
+
+    .special_offers .special_offers3 img {
+        top: 110%;
+        left: -200%;
+        position: relative;
+    }
+
+    .special_offers1 {
+        margin-left: 40%;
+    }
+
+    .special_offers .special_offers3 h2 {
+        top: 102%;
+        left: -200%;
+        position: relative;
+    }
+
+    .menus {
+        flex-direction: column;
+        margin-top: 90px;
+    }
+    .menu_txt{
+        
     }
 }
